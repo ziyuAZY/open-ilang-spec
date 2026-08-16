@@ -1,0 +1,12 @@
+@open-ilang 0.1
+message task.request id=req-100
+from human:maintainer
+to agent:editor
+intent revise
+scope document:protocol-overview
+@priority normal
+@format markdown
+body:
+  Rewrite the overview so it explains the protocol boundary before syntax details.
+  Preserve the public API terms and return a short change summary.
+end

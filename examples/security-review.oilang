@@ -1,0 +1,24 @@
+@open-ilang 0.1
+message task.request id=req-300
+from service:release-bot
+to agent:security-reviewer
+intent audit
+scope release:0.1.0
+requires read.repository
+@priority high
+@evidence required
+@risk read-only
+body:
+  Review the release notes, examples, and CI workflow for unsafe permission claims.
+  Return findings grouped by severity and include exact file references when available.
+end
+
+@open-ilang 0.1
+message receipt id=rcpt-301
+from agent:security-reviewer
+to service:release-bot
+intent accepted
+scope request:req-300
+body:
+  accepted as read-only review; no write permission requested
+end

@@ -1,0 +1,25 @@
+@open-ilang 0.1
+message tool.request id=tool-210
+from agent:builder
+to tool:repository
+intent create-file
+scope repository:ziyuAZY/open-ilang-spec
+requires write.repository
+@risk writes-remote
+body:
+  path: docs/notes/compatibility.md
+  content: add compatibility notes for version 0.1 consumers
+  rollback: delete the file if validation fails before publish
+end
+
+@open-ilang 0.1
+message tool.result id=tool-211
+from tool:repository
+to agent:builder
+intent completed
+scope request:tool-210
+body:
+  status: created
+  commit: abc1234
+  retry-safe: false
+end
