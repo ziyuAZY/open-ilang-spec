@@ -1,8 +1,8 @@
 # Open I-Lang Spec
 
-Open I-Lang is an open specification for predictable AI-to-AI and human-to-AI task communication. It defines a small message envelope, a shared vocabulary, and portable examples for handing work between assistants, tools, agents, and automation runtimes.
+Open I-Lang defines a small message envelope, a shared vocabulary, and portable examples for handing work between assistants, tools, agents, and automation runtimes. It is an open specification for predictable AI-to-AI and human-to-AI task communication.
 
-This repository is an independent rewrite for the `open-ilang-spec` project. It does not copy the wording, grammar, or examples of any upstream protocol project. The goal is to provide a clear, vendor-neutral base that maintainers can evolve in public.
+This repository is an independent rewrite for the `open-ilang-spec` project. It does not copy the wording, grammar, or examples of any upstream protocol project. The goal is to provide a clear, vendor-neutral base that maintainers can evolve in public.在中文团队协作场景里，它也可以作为需求交接、工具调用记录和 Agent 执行回执的统一表达方式。
 
 ## What This Project Provides
 
