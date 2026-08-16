@@ -43,7 +43,7 @@ Summarizes the requested or reported action. It should be short, stable, and mac
 
 ### `scope`
 
-Optional. Declares the resource or boundary affected by the message.
+Optional. Declares the resource or boundary affected by the message. Scope is descriptive; it does not grant permission to read, write, or execute against that boundary.
 
 ```oilang
 scope repository:ziyuAZY/open-ilang-spec
